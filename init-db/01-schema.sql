@@ -64,7 +64,7 @@ COLLATE utf8mb4_unicode_ci;
 
 
 
-INSERT INT(8)O alunos VALUES
+INSERT INTO alunos VALUES
 (1,'Ana','ana@email.com','2000-01-01',true),
 (2,'Bruno','bruno@email.com','2000-01-01',true),
 (3,'Carlos','carlos@email.com','2000-01-01',true),
@@ -88,12 +88,12 @@ INSERT INT(8)O alunos VALUES
 
 
 
-INSERT INT(8)O cursos VALUES
+INSERT INTO cursos VALUES
 (1,'Sistemas de Informação'),
 (2,'Engenharia de Software');
 
 
-INSERT INT(8)O disciplinas VALUES
+INSERT INTO disciplinas VALUES
 (1,'Banco de Dados',1),
 (2,'Engenharia de Software',1),
 (3,'Redes',1),
@@ -101,14 +101,14 @@ INSERT INT(8)O disciplinas VALUES
 (5,'Testes de Software',2);
 
 
-INSERT INT(8)O professores VALUES
+INSERT INTO professores VALUES
 (1,'João',5000),
 (2,'Maria',7000),
 (3,'Carlos',4500);
 
 
 
-INSERT INT(8)O turmas VALUES
+INSERT INTO turmas VALUES
 (1,1,1,'2026-1'),
 (2,2,2,'2026-1'),
 (3,3,3,'2026-1'),
@@ -117,7 +117,7 @@ INSERT INT(8)O turmas VALUES
 
 
 
-INSERT INT(8)O matriculas VALUES
+INSERT INTO matriculas VALUES
 (1,1,1),(2,2,1),(3,3,1),(4,4,1),
 (5,5,2),(6,6,2),(7,7,2),(8,8,2),
 (9,9,3),(10,10,3),(11,11,3),(12,12,3),
@@ -131,7 +131,7 @@ INSERT INT(8)O matriculas VALUES
 
 
 
-INSERT INT(8)O notas VALUES
+INSERT INTO notas VALUES
 (1,1,8),(2,2,7),(3,3,9),(4,4,6),
 (5,5,8),(6,6,7),(7,7,5),(8,8,9),
 (9,9,6),(10,10,7),(11,11,8),(12,12,9),
