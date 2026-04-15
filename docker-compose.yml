@@ -10,3 +10,13 @@ services:
       - "3306:3306"
     volumes:
       - ./init-db:/docker-entrypoint-initdb.d
+    networks:
+      mysql_network:
+        ipv4_address: 10.1.100.2
+
+networks:
+  mysql_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.1.100.0/24
